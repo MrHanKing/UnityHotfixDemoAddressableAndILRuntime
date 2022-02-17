@@ -60,7 +60,7 @@ public GlobalConfigType defaultConfig { get; private set; } = new GlobalConfigTy
 ## 下载地址自定义
 
 - Addressable 地址的替换的实现逻辑在 AddressableTools.cs 中。原理是替换 Addressable 资源寻址的函数。把所有 http 带头的网络资源寻址转换为配置中 hotfixUrl 所指向的地址。
-- 仓库内现在所有热更新资源都生成在根目录的 HotFixData 文件夹内，只要把此文件夹内的所有资源放到 hotfixUrl 所指向的地址内便可以实现热更。比如我本地测试 hotfixUrl 配置了"http://10.1.2.161:8080"，我直接把HotFixData文件夹开放为http://10.1.2.161:8080服务便可以进行局域网的热更新测试了。
+- 仓库内现在所有热更新资源都生成在根目录的 HotFixData 文件夹内，只要把此文件夹内的所有资源放到 hotfixUrl 所指向的地址内便可以实现热更。比如我本地测试 hotfixUrl 配置了 http://10.1.2.161:8080，我直接把HotFixData文件夹开放为 http://10.1.2.161:8080 服务便可以进行局域网的热更新测试了。
 
 ## 资源和代码热更新
 
